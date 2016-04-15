@@ -1,4 +1,4 @@
-<workbook xmlns:ns0="http://www.tableausoftware.com/xml/user" source-platform="win" version="9.2">
+<workbook source-platform="win" version="9.2">
   <preferences>
     <preference name="ui.encoding.shelf.height" value="24" />
     <preference name="ui.shelf.height" value="26" />
@@ -16,7 +16,7 @@
       </column>
     </datasource>
     <datasource inline="true" name="Sample - Superstore" version="9.2">
-      <connection class="excel-direct" cleaning="no" compat="no" dataRefreshTime="" filename="C:\Users\heman\OneDrive\Documents\My Tableau Repository\Datasources\9.2\en_US-US\Sample - Superstore.xls" interpretationMode="0" validate="no">
+      <connection class="excel-direct" cleaning="no" compat="no" dataRefreshTime="" filename="C:\Users\Hemant Gulati\Documents\My Tableau Repository\Datasources\9.2\en_US-US\Sample - Superstore.xls" interpretationMode="0" validate="no">
         <relation name="Orders$" table="[Orders$]" type="table">
           <columns gridOrigin="A1:U9995:no:A1:U9995:0" header="yes" outcome="6">
             <column datatype="integer" name="Row ID" ordinal="0" />
@@ -378,7 +378,7 @@
       <column datatype="string" hidden="true" name="[Customer ID]" role="dimension" type="nominal" />
       <column datatype="string" name="[Customer Name]" role="dimension" type="nominal" />
       <column aggregation="Avg" datatype="real" default-format="p0%" name="[Discount]" role="measure" type="quantitative" />
-      <column datatype="integer" name="[Number of Records]" role="measure" type="quantitative" ns0:auto-column="numrec">
+      <column datatype="integer" name="[Number of Records]" role="measure" type="quantitative">
         <calculation class="tableau" formula="1" />
       </column>
       <column datatype="integer" default-format="*00000" name="[Postal Code]" role="dimension" semantic-role="[ZipCode].[Name]" type="ordinal" />
@@ -2786,10 +2786,10 @@
       <column datatype="real" default-format="c&quot;$&quot;#,##0" name="[Sales]" role="measure" type="quantitative" />
       <column datatype="string" name="[State]" role="dimension" semantic-role="[State].[Name]" type="nominal" />
       <column-instance column="[Forecast Indicator]" derivation="None" forecast-column-base="[Forecast Indicator]" forecast-column-type="forecast-indicator" name="[none:Forecast Indicator:nk]" pivot="key" type="nominal" />
-      <group name="[Top Customers by Profit]" name-style="unqualified" ns0:ui-builder="filter-group">
-        <groupfilter count="[Parameters].[Parameter 1]" end="top" function="end" units="records" ns0:ui-marker="end" ns0:ui-top-by-field="true">
-          <groupfilter direction="DESC" expression="SUM([Profit])" function="order" ns0:ui-marker="order">
-            <groupfilter function="level-members" level="[Customer Name]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+      <group name="[Top Customers by Profit]" name-style="unqualified">
+        <groupfilter count="[Parameters].[Parameter 1]" end="top" function="end" units="records">
+          <groupfilter direction="DESC" expression="SUM([Profit])" function="order">
+            <groupfilter function="level-members" level="[Customer Name]" />
           </groupfilter>
         </groupfilter>
       </group>
@@ -2817,7 +2817,7 @@
         <folder-item name="[Ship Date]" type="field" />
         <folder-item name="[Ship Mode]" type="field" />
       </folder>
-      <layout dim-ordering="alphabetic" dim-percentage="0.582133" group-percentage="0.06244" measure-ordering="alphabetic" measure-percentage="0.268972" parameter-percentage="0.0864553" show-structure="false" />
+      <layout dim-ordering="alphabetic" dim-percentage="0.628083" group-percentage="0.0360531" measure-ordering="alphabetic" measure-percentage="0.26945" parameter-percentage="0.0664137" show-structure="false" />
       <semantic-values>
         <semantic-value key="[Country].[Name]" value="&quot;United States&quot;" />
       </semantic-values>
@@ -2870,7 +2870,7 @@
       </table>
     </worksheet>
   </worksheets>
-  <windows source-height="37">
+  <windows source-height="28">
     <window class="worksheet" maximized="true" name="A">
       <cards>
         <edge name="left">
