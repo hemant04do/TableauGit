@@ -16,7 +16,7 @@
       </column>
     </datasource>
     <datasource inline="true" name="Sample - Superstore" version="9.2">
-      <connection class="excel-direct" cleaning="no" compat="no" dataRefreshTime="" filename="C:\Users\Hemant Gulati\Documents\My Tableau Repository\Datasources\9.2\en_US-US\Sample - Superstore.xls" interpretationMode="0" validate="no">
+      <connection class="excel-direct" cleaning="no" compat="no" dataRefreshTime="" filename="C:\Users\heman\OneDrive\Documents\My Tableau Repository\Datasources\9.2\en_US-US\Sample - Superstore.xls" interpretationMode="0" validate="no">
         <relation name="Orders$" table="[Orders$]" type="table">
           <columns gridOrigin="A1:U9995:no:A1:U9995:0" header="yes" outcome="6">
             <column datatype="integer" name="Row ID" ordinal="0" />
@@ -2817,7 +2817,7 @@
         <folder-item name="[Ship Date]" type="field" />
         <folder-item name="[Ship Mode]" type="field" />
       </folder>
-      <layout dim-ordering="alphabetic" dim-percentage="0.628083" group-percentage="0.0360531" measure-ordering="alphabetic" measure-percentage="0.26945" parameter-percentage="0.0664137" show-structure="false" />
+      <layout dim-ordering="alphabetic" dim-percentage="0.579251" group-percentage="0.0634006" measure-ordering="alphabetic" measure-percentage="0.268972" parameter-percentage="0.0883766" show-structure="false" />
       <semantic-values>
         <semantic-value key="[Country].[Name]" value="&quot;United States&quot;" />
       </semantic-values>
@@ -2863,6 +2863,11 @@
               <breakdown value="auto" />
             </view>
             <mark class="Automatic" />
+            <style>
+              <style-rule element="mark">
+                <format attr="mark-color" value="#d8504c" />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[Sample - Superstore].[none:Segment:nk]</rows>
@@ -2870,7 +2875,7 @@
       </table>
     </worksheet>
   </worksheets>
-  <windows source-height="28">
+  <windows source-height="37">
     <window class="worksheet" maximized="true" name="A">
       <cards>
         <edge name="left">
